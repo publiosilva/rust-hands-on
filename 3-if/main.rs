@@ -14,4 +14,13 @@ fn main() {
   let can_drive = if age >= 16 { "Yes" } else { "No" };
 
   println!("Can you drive? {}", can_drive);
+
+  let lang = "Python";
+  let purpose = match lang {
+    "PHP" => "web",
+    "Python" => "data science",
+    _ => "Unknown"
+  };
+
+  println!("{} purpose is {}", lang, purpose);
 }
